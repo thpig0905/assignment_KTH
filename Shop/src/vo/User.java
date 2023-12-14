@@ -1,7 +1,7 @@
 package vo;
 
 public class User {
-	String userId;
-	String userPw;
-	String userName;
+	String id;
+	String pw;
+	String name;
 }
