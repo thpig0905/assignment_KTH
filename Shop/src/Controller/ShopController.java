@@ -1,7 +1,8 @@
 package Controller;
+import Utils.InnputManger;
 
 public class ShopController {
-	
+	InnputManger innputManger = new InnputManger();
 	// 	System.out.println("[1.쇼핑] [2.장바구니목록] [0.뒤로가기]");
 	
 	// 	System.out.println("[1.내 장바구니] [2.삭제] [3.구입] [0.뒤로가기]");
@@ -11,6 +12,24 @@ public class ShopController {
     }
 
     public void run() {
+        while (true){
+            printMain();
+            int sel = new InnputManger().getNumber("메뉴 선택", 0, 100);
 
+            if (sel == 1) {
+                // 가입
+            } else if (sel == 2) {
+                // 탈퇴
+            } else if (sel == 3) {
+                // 로그인
+            } else if (sel == 4) {
+                // 로그아웃
+            } else if (sel == 100) {
+                // 관리자
+            } else if (sel == 0) {
+                // 종료
+                break;
+            }
+        }
     }
 }
