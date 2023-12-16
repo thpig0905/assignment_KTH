@@ -1,5 +1,9 @@
 package dao;
 
-public class ItemDAO {
+import java.util.Vector;
+import vo.Item;
 
+
+public class ItemDAO {
+    Vector<Item> items = new Vector<Item>();
 }
